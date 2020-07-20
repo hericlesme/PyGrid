@@ -1,12 +1,15 @@
 import logging
 import os
 
+from version import __version__
+
 from flask import Flask
 from flask_cors import CORS
 from flask_sockets import Sockets
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_executor import Executor
+
 
 # Default secret key used only for testing / development
 DEFAULT_SECRET_KEY = "justasecretkeythatishouldputhere"
