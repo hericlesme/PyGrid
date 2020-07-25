@@ -24,14 +24,14 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
     - name: Install Grid Node dependencies 
-      uses: abatilo/actions-poetry@v1.8.1
+      uses: hericlesme/PyPoetry@master
       with:
         python-version: ${{ matrix.python-version }}
         poetry_version: 1.0
         working_directory: ./apps/node
         args: install
     - name: Install Grid Network dependencies
-      uses: abatilo/actions-poetry@v1.8.1
+      uses: hericlesme/PyPoetry@master
       with:
         python-version: ${{ matrix.python-version }}
         poetry_version: 1.0
