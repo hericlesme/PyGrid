@@ -24,14 +24,14 @@ jobs:
       with:
         python_version: ${{ matrix.python-version }}
     - name: Install Grid Node dependencies 
-      uses: hericlesme/PyPoetry@master
+      uses: hericlesme/PyPoetry@dev
       with:
         python_version: ${{ matrix.python-version }}
         poetry_version: 1.0
         workdir: apps/node
         args: install
     - name: Install Grid Network dependencies
-      uses: hericlesme/PyPoetry@master
+      uses: hericlesme/PyPoetry@dev
       with:
         python_version: ${{ matrix.python-version }}
         poetry_version: 1.0
