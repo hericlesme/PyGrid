@@ -29,14 +29,14 @@ jobs:
         python_version: ${{ matrix.python-version }}
         poetry_version: 1.0
         workdir: apps/node
-        args: install
+        command: install
     - name: Install Grid Network dependencies
       uses: hericlesme/PyPoetry@dev
       with:
         python_version: ${{ matrix.python-version }}
         poetry_version: 1.0
         workdir: apps/network
-        args: install
+        command: install
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined
